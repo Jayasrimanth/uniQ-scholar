@@ -29,7 +29,11 @@ nav span{
   
 }
 section{ 
-  padding: 0;
+  padding: 0%;
+  background-image: url('WhatsApp Image 2023-12-20 at 9.04.39 PM.jpeg');
+  background-size: cover;
+  background-position: relative;
+  background-repeat: no-repeat;
 }
 @media screen and (min-width: 600px) {
   section {
@@ -54,21 +58,65 @@ section div{
 
 
 }
-.main-btn{
-  background-color: #3498db;
-  text-decoration: none;
-  color: white;
-  padding: 10px 20px;
-  font-size: 16px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-.main-btn:hover{  background-color: #2980b9;}
+
 .home-img img{ 
   width: 400px;
   height: 300px;
+}
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #333;
+}
+
+.container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.container li {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+}
+.graph {
+  max-width: 800px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.image-container img {
+  max-width: 50%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Media query for screens with width less than 600px (portrait orientation) */
+@media only screen and (max-width: 600px) {
+  .image-container {
+      flex-direction: column; /* Stack images vertically for portrait orientation */
+  }
+
+  img {
+      width: 100%; /* Make the image take the full width of the container */
+  }
 }
 footer {
     background-color: #1a1a1ac5;

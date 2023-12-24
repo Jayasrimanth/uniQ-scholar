@@ -30,6 +30,10 @@ nav span{
 }
 section{ 
   padding: 0%;
+  background-image: url('WhatsApp Image 2023-12-20 at 9.04.39 PM.jpeg');
+  background-size: cover;
+  background-position: relative;
+  background-repeat: no-repeat;
 }
 @media screen and (min-width: 600px) {
   section {
@@ -59,7 +63,25 @@ section div{
   width: 400px;
   height: 300px;
 }
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
+.content {
+  line-height: 1.6;
+}
+
+@media only screen and (max-width: 600px) {
+  /* Add responsive styles as needed for smaller screens */
+  .container {
+      padding: 10px;
+  }
+}
 footer {
     background-color: #1a1a1ac5;
     color: white;
